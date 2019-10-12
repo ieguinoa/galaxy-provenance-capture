@@ -4,7 +4,7 @@ Retrospective provenance capturing from Galaxy workflow invocations
 
 - The initial version of this tool starts from a workflow invocation id and extracts all information required to reproduce the analysis. 
 
-- The provenance information is then wrapped in the ligthweight packaging format ro-crate (https://github.com/ResearchObject/ro-crate).
+- The files from the workflow and the execution provenance information are then organized using the ligthweight packaging format RO-crate (https://github.com/ResearchObject/ro-crate).
 
 - The ro-crate object is extended with metadata obtained from the Galaxy workflow file (see https://github.com/ieguinoa/cwl-from-galaxy) and the input data.
 
