@@ -1,8 +1,10 @@
 # galaxy-provenance-capture
-Retrospective provenance capturing from Galaxy workflow invocations
+Retrospective provenance capturing from Galaxy workflow invocations.
 
+This project focus on producing a workflow-centric executable RO-crate from a workflow execution performed using a Galaxy instance. 	
+This approach enables the complete sharing of a computational analysis performed using Galaxy in a format that allows re-running the analysis using any other Galaxy instance.
 
-- The initial version of this tool starts from a workflow invocation id and extracts all information required to reproduce the analysis including the workflow definition and a capture of retrospective provenance.  
+- The initial version of this tool starts from a workflow invocation id and extracts all information required to reproduce the analysis including the workflow definition, inputs, outputs and a capture of the retrospective provenance.  
 
 - The files from the workflow definition and its retrospective provenance trace are then organized using the ligthweight packaging format RO-crate (https://github.com/ResearchObject/ro-crate).
 
@@ -14,3 +16,12 @@ Retrospective provenance capturing from Galaxy workflow invocations
 
 - More info and discussion of the plans about this repo can be found at: https://github.com/ResearchObject/ro-crate/issues/21 and https://github.com/ieguinoa/galaxy-provenance-capture/issues/1
 
+
+
+# Tests/examples
+
+- Under the dir tests there is a set of directories, each corresponding to a reference workflow. Under each directory the corresponding sets of input files can be found.
+
+- The RO-crate packages obtained from one or more runs of these reference workflows, each execution involving a specific set of parameters, input files, reference data, etc. are stored in the directories ro-crate-runX, with X the id of the run.
+
+- RO-create folder structure:

@@ -1,0 +1,33 @@
+{
+    "input": {
+        "class": "File",
+        "location": "../data/32/327fc7aedf4f6b69a42a7c8b808dc5a7aff61376",
+        "format": "http://edamontology.org/format_2182",
+        "size": xxxxx,
+        "basename": "forward_reads.fastq",
+        "nameroot": "forward_reads",
+        "nameext": ".fastq",
+        "checksum": "sha1$327fc7aedf4f6b69a42a7c8b808dc5a7aff61376"
+    },
+    "input": {
+        "class": "File",
+        "location": "../data/32/327fc7aedf4f6b69a42a7c8b808dc5a7aff61376",
+        "format": "http://edamontology.org/format_2182",
+        "size": xxxxx,
+        "basename": "reverse_reads.fastq",
+        "nameroot": "reverse_reads",
+        "nameext": ".fastq",
+        "checksum": "sha1$327fc7aedf4f6b69a42a7c8b808dc5a7aff61376"
+    },
+    "input": {
+        "class": "File",
+        "location": "../data/32/327fc7aedf4f6b69a42a7c8b808dc5a7aff61376",
+        "format": "http://edamontology.org/format_1929",
+        "size": xxxxx,
+        "basename": "genome.fasta",
+        "nameroot": "genome",
+        "nameext": ".fasta",
+        "checksum": "sha1$327fc7aedf4f6b69a42a7c8b808dc5a7aff61376"
+    },
+    "reverse_sort": true
+}
