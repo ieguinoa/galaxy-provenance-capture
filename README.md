@@ -20,8 +20,8 @@ This approach enables the complete sharing of a computational analysis performed
 
 # Tests/examples
 
-- Under the dir tests there is a set of directories, each corresponding to a reference workflow. Under each directory the corresponding sets of input files can be found.
+- Under the dir examples there is a set of directories, each corresponding to a reference workflow. Under each of these there are directories containing:
+	- Directories named ro-crate-reference-workflow: Contain the RO-crate package associated with the reference workflow.
+	- Directories named ro-crate-runX: These directories contain RO-crate packages derived from indepedent executions of the workflow and contain: input and output files, reference data, provenance trace, etc.
 
-- The RO-crate packages obtained from one or more runs of these reference workflows, each execution involving a specific set of parameters, input files, reference data, etc. are stored in the directories ro-crate-runX, with X the id of the run.
-
-- RO-create folder structure:
+- RO-create folder structures
