@@ -1,47 +1,84 @@
-{
+{ "@context": "https://w3id.org/ro/crate/0.2/context",
+  "@graph": [
+ {
     "@type": "CreativeWork",
     "@id": "ro-crate-metadata.jsonld",
     "identifier": "ro-crate-metadata.jsonld",
     "about": {"@id": "./"}
-},
-
-{
-  "@id": "./",
-  "@type": "Dataset",
-  ...
-}
-
-
-{ "@context": "https://w3id.org/ro/crate/0.2/context",
-  "@graph": [
+ },
 
  {
     "@id": "./",
-    "identifier": "https://doi.org/10.4225/59/59672c09f4a4b",
+    "identifier": "***fill with DOI URL",
     "@type": "Dataset",
-    "datePublished": "2017",
-    "name": "Dataa files associated with the manuscript:Effects of facilitated family case conferencing for advanced dementia: A cluster randomised clinical trial",
+    "datePublished": "2019",
+    "name": "Data files associated with execution of workflow in test 1",
     "distribution": { "@id": "https://data.research.uts.edu.au/examples/v1.0/timluckett.zip"
         },
-"contactPoint": {
-        "@id": "tim.luckett@uts.edu.au"
+    "contactPoint": {
+        "@id": "ignacio.eguinoa@psb.vib-ugent.be"
       }
+    "hasPart": [
+      {
+        "@id": "./workflow_execution/provenance"
+      },
+      {
+        "@id": "./workflow_execution/workflow_file.ga"
+      },
+      ],
+   },
+
+
  },
 
  {
     "@id": "https://data.research.uts.edu.au/examples/v1.0/timluckett.zip",
-    "contentUrl": "https://data.research.uts.edu.au/examples/v1.0/timluckett.zip",
+    "contentUrl": "****URL to download the whole RO-create ",
     "@type": "DataDownload",
     "encodingFormat": "application/zip"
  },
 
  {
-      "@id": "tim.luckett@uts.edu.au",
+      "@id": "ignacio.eguinoa@psb.vib-ugent.be",
       "@type": "ContactPoint",
       "contactType": "customer service",
-      "email": "tim.luckett@uts.edu.au",
-      "identifier": "tim.luckett@uts.edu.au",
-      "url": "https://orcid.org/0000-0001-6121-5409"
+      "email": "ignacio.eguinoa@psb.vib-ugent.be",
+      "identifier": "ignacio.eguinoa@psb.vib-ugent.be",
+      "url": "https://orcid.org/0000-0002-6190-122X"
+  },
+
+  {
+      "@id": "./workflow_execution/provenance",
+      "@type": "Dataset",
+      "description": "This directory contains all files related with the provenance trace of the execution",
+      "name": "Provenance dir",
+
+  }
+
+  {
+      "@id": "./workflow_execution/workflow_file.ga",
+      "@type": "SoftwareSourceCode",
+      "additionalType": {"@id": "Workflow"},
+      "name": "Bowtie2 paired end mapping workflow",
+      "description": "Galaxy implementation of paired end RNA-seq mapping using bowtie2",
+      "author": {"@id": "#thomas"},
+      "programmingLanguage": {"@id": "#Galaxy"},
+      "license": "https://spdx.org/licenses/BSD-2-Clause.html",
+      "potentialAction": {
+      "@type": "ActivateAction",
+         "instrument": {"@id": "#Galaxy"}
+            }
+  }
+  {
+      "@id": "#Galaxy",
+      "@type": [
+          "ComputerLanguage",
+          "SoftwareApplication"
+            ],
+      "name": "Galaxy Platform",
+      "alternateName": "Galaxy Project",
+      "url": {"@id": "https://galaxyproject.org/"},
+      "version": "19.05"
   }
 
  ]
